@@ -17,11 +17,11 @@ public class Imagen implements Serializable {
     private String nombre;
 
     @Basic
-    @Column(name = "TYPE", nullable = false, length = 10)
+    @Column(name = "TIPO", nullable = false, length = 10)
     private String tipo;
 
-    @Basic
-    @Column(name = "DATA",nullable = false)
+    @Lob
+    @Column(name = "DATOS",nullable = false, columnDefinition="MEDIUMBLOB")
     private byte[] data;
 
     public Long getUuid() {
