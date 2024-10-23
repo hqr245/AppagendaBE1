@@ -21,7 +21,7 @@ public class Imagen implements Serializable {
     private String tipo;
 
     @Lob
-    @Column(name = "DATOS",nullable = false, columnDefinition="MEDIUMBLOB")
+    @Column(name = "DATOS", columnDefinition="MEDIUMBLOB")
     private byte[] data;
 
     public Long getUuid() {

@@ -25,11 +25,11 @@ public class Persona {
     private String apellidos;
 
     @Basic
-    @Column(name = "TELEFONO", nullable = true, length = 15)
+    @Column(name = "TELEFONO", length = 15)
     private String telefono;
 
     @Basic
-    @Column(name = "EMAIL", nullable = true, length = 30)
+    @Column(name = "EMAIL", length = 30)
     private String email;
 
     @ManyToOne
@@ -37,19 +37,19 @@ public class Persona {
     private Provincia provincia;
 
     @Basic
-    @Column(name = "FECHA_NACIMIENTO", nullable = true)
+    @Column(name = "FECHA_NACIMIENTO")
     private Date fechaNacimiento;
 
     @Basic
-    @Column(name = "NUM_HIJOS", nullable = true)
+    @Column(name = "NUM_HIJOS")
     private short numHijos;
 
     @Basic
-    @Column(name = "ESTADO_CIVIL", nullable = true, length = 1)
+    @Column(name = "ESTADO_CIVIL", length = 1)
     private String estado_civil;
 
     @Basic
-    @Column(name = "SALARIO", nullable = true, precision = 9, scale = 2)
+    @Column(name = "SALARIO", precision = 9, scale = 2)
     private BigDecimal salario;
 
     @Basic
